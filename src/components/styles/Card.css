@@ -10,7 +10,7 @@
 .details {
   display: grid;
   grid-template-columns: repeat(5, 20%);
-  height: 35vh;
+  height: 56vh;
 }
 .div-img {
   height: 20vh;

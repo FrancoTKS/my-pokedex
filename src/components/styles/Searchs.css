@@ -1,87 +1,120 @@
 /* bug, dragon, fairy, fire, ghost, earth, normal, psychic, steel, sinister,
 electric, fight, flying, plant, ice, poison, rock, water */
 
-.btn-bug{
-    color: hsl(0, 0%, 0%);
-    background-color: greenyellow;
+.btn-table-bug {
+  color: hsl(0, 0%, 0%);
+  background-color: greenyellow;
 }
-.btn-dragon{
-    color: hsl(0, 0%, 0%);
-    background-color: rgb(21, 97, 160);
+.btn-table-dragon {
+  color: hsl(0, 0%, 0%);
+  background-color: rgb(21, 97, 160);
 }
-.btn-fairy{
-    color: hsl(0, 0%, 0%);
-    background-color: pink;
+.btn-table-fairy {
+  color: hsl(0, 0%, 0%);
+  background-color: pink;
 }
-.btn-fire{
-    color: hsl(0, 0%, 0%);
-    background-color: orange;
+.btn-table-fire {
+  color: hsl(0, 0%, 0%);
+  background-color: orange;
 }
-.btn-ghost{
-    color: hsl(0, 0%, 0%);
-    background-color: violet;
+.btn-table-ghost {
+  color: hsl(0, 0%, 0%);
+  background-color: violet;
 }
-.btn-earth{
-    color: hsl(0, 0%, 0%);
-    background-color: rgb(134, 132, 34);
+.btn-table-earth {
+  color: hsl(0, 0%, 0%);
+  background-color: rgb(134, 132, 34);
 }
-.btn-normal{
-    color: hsl(0, 0%, 0%);
-    background-color: white;
+.btn-table-normal {
+  color: hsl(0, 0%, 0%);
+  background-color: white;
 }
-.btn-psychic{
-    color: hsl(0, 0%, 0%);
-    background-color: rgb(205, 98, 209);
+.btn-table-psychic {
+  color: hsl(0, 0%, 0%);
+  background-color: rgb(205, 98, 209);
 }
-.btn-steel{
-    color: hsl(0, 0%, 0%);
-    background-color: grey;
+.btn-table-steel {
+  color: hsl(0, 0%, 0%);
+  background-color: grey;
 }
-.btn-sinister{
-    color: white;
-    background-color: black;
+.btn-table-sinister {
+  color: white;
+  background-color: black;
 }
-.btn-electric{
-    color: hsl(0, 0%, 0%);
-    background-color: yellow;
+.btn-table-electric {
+  color: hsl(0, 0%, 0%);
+  background-color: yellow;
 }
-.btn-fight{
-    color: hsl(0, 0%, 0%);
-    background-color: orangered;
+.btn-table-fight {
+  color: hsl(0, 0%, 0%);
+  background-color: orangered;
 }
-.btn-flying{
-    color: hsl(0, 0%, 0%);
-    background-color: rgb(69, 122, 146);
+.btn-table-flying {
+  color: hsl(0, 0%, 0%);
+  background-color: rgb(69, 122, 146);
 }
-.btn-plant{
-    color: hsl(0, 0%, 0%);
-    background-color: green;
+.btn-table-plant {
+  color: hsl(0, 0%, 0%);
+  background-color: green;
 }
-.btn-ice{
-    color: hsl(0, 0%, 0%);
-    background-color: aquamarine;
+.btn-table-ice {
+  color: hsl(0, 0%, 0%);
+  background-color: aquamarine;
 }
-.btn-poison{
-    color: hsl(0, 0%, 0%);
-    background-color: purple;
+.btn-table-poison {
+  color: hsl(0, 0%, 0%);
+  background-color: purple;
 }
-.btn-rock{
-    color: hsl(0, 0%, 0%);
-    background-color: brown;
+.btn-table-rock {
+  color: hsl(0, 0%, 0%);
+  background-color: brown;
 }
-.btn-water{
-    color: hsl(0, 0%, 0%);
-    background-color: aqua;
-}
-
-.div-search{
-    display: grid;
-    grid-template-columns: repeat(3,15%);
-    grid-template-rows: auto;
+.btn-table-water {
+  color: hsl(0, 0%, 0%);
+  background-color: aqua;
 }
 
-.grid-types{
-    grid-gap: 0.5vh;
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
+.div-search table {
+  width: 100%;
+  height: 50vh;
+  margin: 5vh 0vh 5vh 0vh;
+  grid-column: 2;
+}
+.div-search {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+}
+.grid-types {
+  grid-gap: 0.5vh;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+
+.types-pokemon {
+  display: grid;
+  grid-template-columns: 1fr 10% 1fr;
+}
+.img-table-search {
+  width: 100%;
+  height: 100%;
+}
+
+.div-img-search {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  grid-column: 3;
+  width: 75%;
+  height: 75%;
+  margin: 5vh;
+}
+
+table tbody tr td button font.font-detail{
+  color: black;
+}
+button[class^="btn-table-"] {
+  height: 100%;
+    width: 100%;
+    cursor: pointer;
 }

@@ -73,23 +73,6 @@ export default function Details() {
     return poke;
   }
 
-  function table(det) {
-    let table = `
-    <table className="table-contain">
-    <thead>
-      <tr>`;
-    det.forEach((lista) => {
-      table += `<th> ${lista.name_stats} </th>`;
-    });
-    table += `</tr>
-    </thead>
-    <tbody><tr>`;
-    det.forEach((lista) => (table += `<td>${lista.base_stats}</td>`));
-
-    table += `</tr></tbody></table>`;
-    document.querySelector(".div-table").innerHTML = table;
-  }
-
   function table2(det) {
     let table = `
     <table>
@@ -147,25 +130,3 @@ export default function Details() {
     </div>
   );
 }
-//
-//<div className="div-dex">
-//{pokemon ? (
-// <div className="contain-dex">
-//   <i className="dex-num">N°{pokemon.num}</i>
-//     <img src={pokemon.img} className="div-img" alt={pokemon.name} />
-//   <h3 className="dex-name">{pokemon.name}</h3>
-//   <div className="dex-types">
-//     <ul>
-//       {pokemon.type.map((type, index) => (
-//         <li key={index}>{type}</li>
-//       ))}
-//     </ul>
-//   </div>
-//   <div className="detail-Stats">
-//     <ul>
-//       {pokemon.stats.map((name, stat ,index) => (
-//         <li key={index}>{name}: {stat}</li>
-//       ))}
-//     </ul>
-//   </div>
-// </div>

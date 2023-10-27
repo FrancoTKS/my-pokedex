@@ -4,6 +4,9 @@ export const POKE_API = {
   type: function (type) {
     return `${this.URL}/type/${type}/`;
   },
+    getAlltype: function () {
+    return `${this.URL}/type/`;
+  },
   pokemon_by_id: function (id) {
     return `${this.URL}/pokemon/${id}/`;
   },
@@ -19,4 +22,8 @@ export const POKE_API = {
   evolution: function (id) {
     return `${this.URL}/evolution-chain/${id}/`;
   },
+  countEvolution: function () {
+   return `${this.URL}/evolution-chain/`;
+  },
+
 };

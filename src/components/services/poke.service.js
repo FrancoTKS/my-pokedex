@@ -1,7 +1,17 @@
 import { POKE_API } from "../constants/Api.constants";
 
 class pokemon_services {
-  async getAlltypes(type) {
+
+  async getAlltypes() {
+    try {
+      const response = await fetch(POKE_API.getAlltype());
+      return await response.json();
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  async getTypes(type) {
     try {
       const response = await fetch(POKE_API.type(type));
       return await response.json();
@@ -45,6 +55,13 @@ class pokemon_services {
       console.error(error);
     }
   }
-
+  async getcountEvolution() {
+    try {
+      const response = await fetch(POKE_API.countEvolution);
+      return await response.json();
+    } catch (error) {
+      console.error(error);
+    }
+  }
 }
 export default new pokemon_services();

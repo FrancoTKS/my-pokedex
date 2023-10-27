@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
 import pokeService from "../services/poke.service";
-import { Link, useLocation, useParams } from "react-router-dom";
-import Dex from "./Dex";
-import "../styles/Card.css";
 import Evolutions from "./Evolutions";
 import left from "../images/icons/Icons-Ocultos/arrow-left-double-fill.png";
 import right from "../images/icons/Icons-Ocultos/arrow-right-double-fill.png";
+import "../styles/Card.css";
+
 export default function Card() {
-  const [pokemon, setpokemon] = useState();
-  const [evo, setevo] = useState([]);
   const [evolves, setevolves] = useState([]);
   const [id, setid] = useState(1);
 
@@ -19,45 +16,6 @@ export default function Card() {
     }
     fetchData();
   }, [id]);
-
-  async function pokemonbyid_Stats(id) {
-    try {
-      await pokeService.getbyId(id).then((data) => {
-        let name = data.name;
-        let num = data.id;
-        let img = data.sprites.other["official-artwork"].front_default;
-        let type = [];
-        data.types.forEach((d) => {
-          type.push(d.type.name);
-        });
-        let stat = [];
-        data.stats.forEach((d) => {
-          const baseStat = d.base_stat;
-          const statName = d.stat.name;
-          stat.push({ name_stats: statName, base_stats: baseStat });
-        });
-        setpokemon(jsonStat(name, num, img, type, stat));
-      });
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-  async function pokemonbyEvo_Data(name) {
-    try {
-      const data = await pokeService.getbyName(name);
-      const n = data.name;
-      const num = data.id;
-      const img = data.sprites.other["official-artwork"].front_default;
-      let type = [];
-      data.types.forEach((d) => {
-        type.push(d.type.name);
-      });
-      return n, num, img, type;
-    } catch (error) {
-      console.log(error);
-    }
-  }
 
   async function AllEvolutions(id) {
     try {
@@ -80,17 +38,6 @@ export default function Card() {
     } catch (error) {
       console.log(error);
     }
-  }
-
-  function jsonStat(nom, n, ig, t, s) {
-    const poke = {
-      name: nom,
-      num: n,
-      img: ig,
-      type: t,
-      stats: s,
-    };
-    return poke;
   }
 
   function Previous() {
