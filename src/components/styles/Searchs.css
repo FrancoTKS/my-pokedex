@@ -1,0 +1,87 @@
+/* bug, dragon, fairy, fire, ghost, earth, normal, psychic, steel, sinister,
+electric, fight, flying, plant, ice, poison, rock, water */
+
+.btn-bug{
+    color: hsl(0, 0%, 0%);
+    background-color: greenyellow;
+}
+.btn-dragon{
+    color: hsl(0, 0%, 0%);
+    background-color: rgb(21, 97, 160);
+}
+.btn-fairy{
+    color: hsl(0, 0%, 0%);
+    background-color: pink;
+}
+.btn-fire{
+    color: hsl(0, 0%, 0%);
+    background-color: orange;
+}
+.btn-ghost{
+    color: hsl(0, 0%, 0%);
+    background-color: violet;
+}
+.btn-earth{
+    color: hsl(0, 0%, 0%);
+    background-color: rgb(134, 132, 34);
+}
+.btn-normal{
+    color: hsl(0, 0%, 0%);
+    background-color: white;
+}
+.btn-psychic{
+    color: hsl(0, 0%, 0%);
+    background-color: rgb(205, 98, 209);
+}
+.btn-steel{
+    color: hsl(0, 0%, 0%);
+    background-color: grey;
+}
+.btn-sinister{
+    color: white;
+    background-color: black;
+}
+.btn-electric{
+    color: hsl(0, 0%, 0%);
+    background-color: yellow;
+}
+.btn-fight{
+    color: hsl(0, 0%, 0%);
+    background-color: orangered;
+}
+.btn-flying{
+    color: hsl(0, 0%, 0%);
+    background-color: rgb(69, 122, 146);
+}
+.btn-plant{
+    color: hsl(0, 0%, 0%);
+    background-color: green;
+}
+.btn-ice{
+    color: hsl(0, 0%, 0%);
+    background-color: aquamarine;
+}
+.btn-poison{
+    color: hsl(0, 0%, 0%);
+    background-color: purple;
+}
+.btn-rock{
+    color: hsl(0, 0%, 0%);
+    background-color: brown;
+}
+.btn-water{
+    color: hsl(0, 0%, 0%);
+    background-color: aqua;
+}
+
+.div-search{
+    display: grid;
+    grid-template-columns: repeat(3,15%);
+    grid-template-rows: auto;
+}
+
+.grid-types{
+    grid-gap: 0.5vh;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}

@@ -1,0 +1,56 @@
+.div-dex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    background-color: red;
+    position: relative;
+    flex-direction: column;
+  }
+  .details {
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-gap: 0.5vh;
+    height: 56vh;
+  }
+  .div-img {
+    height: 35vh;
+    width: 100%;
+    background-color: aqua;
+    position: relative;
+  }
+  
+  .contain-dex {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 3px solid;
+    background-color: chartreuse;
+  }
+  
+  .dex-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+  }
+  .dex-types {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .dex-types ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .dex-types li {
+    margin-right: 10px;
+  }
