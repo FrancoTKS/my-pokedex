@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/my-pokedex/static/css/main.e1b7a20b.css",
+    "main.js": "/my-pokedex/static/js/main.b4d47a8f.js",
+    "static/js/787.246f5904.chunk.js": "/my-pokedex/static/js/787.246f5904.chunk.js",
+    "static/media/ladder_poke.png": "/my-pokedex/static/media/ladder_poke.320d926cb2ead2d0d057.png",
+    "static/media/banner_iniciales.png": "/my-pokedex/static/media/banner_iniciales.400e744728531c67c75a.png",
+    "static/media/banner_pokemon.png": "/my-pokedex/static/media/banner_pokemon.9631a0e0100b336ef8dd.png",
+    "static/media/pokebola.png": "/my-pokedex/static/media/pokebola.5f1083aba40e9caea1f4.png",
+    "static/media/togepi.png": "/my-pokedex/static/media/togepi.a52a8f2d41824568f2ca.png",
+    "static/media/logo_nintendo.png": "/my-pokedex/static/media/logo_nintendo.bb47e7671fcd79b9cdc8.png",
+    "index.html": "/my-pokedex/index.html",
+    "main.e1b7a20b.css.map": "/my-pokedex/static/css/main.e1b7a20b.css.map",
+    "main.b4d47a8f.js.map": "/my-pokedex/static/js/main.b4d47a8f.js.map",
+    "787.246f5904.chunk.js.map": "/my-pokedex/static/js/787.246f5904.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1b7a20b.css",
+    "static/js/main.b4d47a8f.js"
+  ]
+}
