@@ -1,0 +1,15 @@
+Hola este es mi proyecto base de una pokedex a partir de la pokeapi de uso publico.
+La verdad tuve muchas dificultades y muchos cambios de linea y vision con respecto a algunas partes de la pokedex,
+no soy muy bueno en esto pero creo que hice lo mejor posible, espero sea de su agrado y valoren el esfuerzo, aunque realmente no esta terminada y
+sigue sujeta a cambios/muchos cambios, aqui una lista de algunos de ellos.
+
+- Tengo que mejorar el diseño responsive e informarme mas sobre este asunto.
+- Agregar algun tipo de interaccion para que al ingresar el usuario pueda poder elegir 5 pokemones iniciales,
+aunque nose bien si eso es posible hacerlo.
+- Arreglar los problemas de sobre carga de datos, en varios lados hay que hacer varias veces click para que funcione correctamente,
+la carga es lenta e interrumpe la implementacion que uno quiere llegar a hacer
+- Hacer la busqueda por 2 types de pokemons, aunque en la api no explican como hacerlo ni hay una consulta de eso, puede que no se pueda nose bien todavia.
+- agregar botones para ir atras, ver como podria hacer para que queden las paginas en la parte del enlace.
+
+Y varias mas que seguramente no me acuerdo, sin muchos mas que pensar y que decir,
+disfruten y si tienen mejoras con gusto escuchare y tratare de implementarlas, saludoss (ﾉ◕ヮ◕)ﾉ*❤.

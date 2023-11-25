@@ -1,0 +1,103 @@
+.contact {
+  display: grid;
+  grid-template-columns: 2% 1fr 10% 1fr 2%;
+  grid-template-rows: repeat(1, 10% 1fr 10%);
+  width: 100%;
+  height: 65vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+body.light .contact {
+  color: gray;
+
+  .form-contact input {
+    color: gray;
+  }
+  .form-contact textarea {
+    color: gray;
+  }
+  .form-select-vote option {
+    color: gray;
+    background-color: var(--color-black-fondo);
+  }
+  .form-contact select {
+    background-color: transparent;
+    color: gray;
+  }
+
+}
+
+body.dark.light .contact {
+  color: black;
+  .form-contact input {
+    color: black;
+  }
+  .form-contact textarea {
+    color: black;
+  }
+  .form-select-vote option {
+    color: black;
+    background-color: antiquewhite;
+  }
+  .form-contact select {
+    background-color: transparent;
+    color: black;
+  }
+}
+
+.title-contact {
+  grid-column: 2;
+}
+
+.form-contact {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  row-gap: 0.5vh;
+}
+
+.contain-img-contact {
+  grid-column: 4;
+  grid-row: 1/4;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.contact-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.div-form-submit-contact {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 1vh;
+}
+
+.form-contact textarea {
+  border: 2px solid #333;
+  background-color: transparent;
+}
+
+.valid{
+  color: forestgreen;
+  font-size: smaller;
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  
+}

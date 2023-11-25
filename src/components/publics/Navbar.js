@@ -8,6 +8,7 @@ import logMail from "../images/icons/Icons-Ocultos/mail-send-line.png";
 import logStonk from "../images/icons/Icons-Ocultos/line-chart-fill.png";
 import logPokedex from "../images/icons/pokedex.png";
 import logSearch from "../images/icons/Icons-Ocultos/menu-search-line-dark.png";
+
 export default function Navbar() {
   const [mod, setmod] = useState(true);
   useEffect(() => {
@@ -27,27 +28,43 @@ export default function Navbar() {
           <nav>
             <ul className="ul-navbar">
               <li>
-                <Link to="/home" className="links">
+                <Link to="/my-pokedex" className="links">
                   Home
-                  <img src={logHome} className="img-home" alt="home" />
+                  <img
+                    src={logHome}
+                    className="img-navbar-items-home"
+                    alt="home"
+                  />
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="links">
                   Contact Us
-                  <img src={logMail} className="img-mail" alt="mail" />
+                  <img
+                    src={logMail}
+                    className="img-navbar-items-mail"
+                    alt="mail"
+                  />
                 </Link>
               </li>
               <li>
                 <Link to="/pokedex" className="links">
                   Pokedex
-                  <img src={logPokedex} className="img-pokedex" alt="pokedex" />
+                  <img
+                    src={logPokedex}
+                    className="img-navbar-items-pokedex"
+                    alt="pokedex"
+                  />
                 </Link>
               </li>
               <li>
                 <Link to="/evolutions" className="links">
                   Evolutions
-                  <img src={logStonk} className="img-stonks" alt="stonk" />
+                  <img
+                    src={logStonk}
+                    className="img-navbar-items-stonks"
+                    alt="stonk"
+                  />
                 </Link>
               </li>
             </ul>
@@ -75,12 +92,22 @@ export default function Navbar() {
             </button>
             <button type="button" className="romboid-button">
               <Link to="/login" className="links">
-                <span className="btn-font">login</span>
+                <span className="btn-font">
+                  login
+                  <i
+                    className="fa-solid fa-users-viewfinder img-navbar-items-login"
+                  ></i>
+                </span>
               </Link>
             </button>
             <button type="button" className="romboid-button">
               <Link to="/register" className="links">
-                <span className="btn-font">Sign-up</span>
+                <span className="btn-font">
+                  Sign-up
+                  <i
+                    className="fa-regular fa-address-card img-navbar-items-sign"
+                  ></i>
+                </span>
               </Link>
             </button>
           </div>

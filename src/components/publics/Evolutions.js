@@ -37,13 +37,13 @@ export default function Evolutions({ list }) {
   }
 
   return (
-    <div className="div-dex">
+    <div className="div-dex-evo">
       {pokemon ? (
-        <div className="contain-dex">
-          <i className="dex-num">N°{pokemon.num}</i>
-          <img src={pokemon.img} className="div-img" alt={pokemon.name} />
-          <h3 className="dex-name">{pokemon.name}</h3>
-          <div className="dex-types">
+        <div className="contain-dex-evo">
+          <i className="dex-num-evo">N°{pokemon.num}</i>
+          <img src={pokemon.img} className="div-img-evo" alt={pokemon.name} />
+          <h3 className="dex-name-evo">{pokemon.name}</h3>
+          <div className="dex-types-evo">
             <ul>
               {pokemon.type.map((type, index) => (
                 <li key={index}>{type}</li>

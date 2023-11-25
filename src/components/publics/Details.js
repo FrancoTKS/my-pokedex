@@ -31,36 +31,11 @@ export default function Details() {
     }
   }, [id]);
 
-  console.log(pokemon);
-
   useEffect(() => {
     if (pokemon) {
       table2(pokemon.stats);
     }
   }, [pokemon]);
-
-  async function pokemonbyid_Stats(id) {
-    try {
-      await pokeService.getbyId(id).then((data) => {
-        let name = data.name;
-        let num = data.id;
-        let img = data.sprites.other["official-artwork"].front_default;
-        let type = [];
-        data.types.forEach((d) => {
-          type.push(d.type.name);
-        });
-        let stat = [];
-        data.stats.forEach((d) => {
-          const baseStat = d.base_stat;
-          const statName = d.stat.name;
-          stat.push({ name_stats: statName, base_stats: baseStat });
-        });
-        return jsonStat(name, num, img, type, stat);
-      });
-    } catch (error) {
-      console.log(error);
-    }
-  }
 
   function jsonStat(nom, n, ig, t, s) {
     const poke = {

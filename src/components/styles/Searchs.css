@@ -1,89 +1,77 @@
 /* bug, dragon, fairy, fire, ghost, earth, normal, psychic, steel, sinister,
 electric, fight, flying, plant, ice, poison, rock, water */
 
+button[class^="btn-table-"] {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  font-family: "Permanent Marker", cursive;
+  color: black;
+}
+
 .btn-table-bug {
-  color: hsl(0, 0%, 0%);
   background-color: greenyellow;
 }
 .btn-table-dragon {
-  color: hsl(0, 0%, 0%);
   background-color: rgb(21, 97, 160);
 }
 .btn-table-fairy {
-  color: hsl(0, 0%, 0%);
   background-color: pink;
 }
 .btn-table-fire {
-  color: hsl(0, 0%, 0%);
   background-color: orange;
 }
 .btn-table-ghost {
-  color: hsl(0, 0%, 0%);
   background-color: violet;
 }
-.btn-table-earth {
-  color: hsl(0, 0%, 0%);
+.btn-table-ground {
   background-color: rgb(134, 132, 34);
 }
 .btn-table-normal {
-  color: hsl(0, 0%, 0%);
   background-color: white;
 }
 .btn-table-psychic {
-  color: hsl(0, 0%, 0%);
   background-color: rgb(205, 98, 209);
 }
 .btn-table-steel {
-  color: hsl(0, 0%, 0%);
   background-color: grey;
 }
-.btn-table-sinister {
-  color: white;
+.btn-table-dark {
   background-color: black;
+  color: azure!important;
 }
 .btn-table-electric {
-  color: hsl(0, 0%, 0%);
   background-color: yellow;
 }
-.btn-table-fight {
-  color: hsl(0, 0%, 0%);
+.btn-table-fighting {
   background-color: orangered;
 }
 .btn-table-flying {
-  color: hsl(0, 0%, 0%);
   background-color: rgb(69, 122, 146);
 }
-.btn-table-plant {
-  color: hsl(0, 0%, 0%);
+.btn-table-grass {
   background-color: green;
 }
 .btn-table-ice {
-  color: hsl(0, 0%, 0%);
   background-color: aquamarine;
 }
 .btn-table-poison {
-  color: hsl(0, 0%, 0%);
   background-color: purple;
 }
 .btn-table-rock {
-  color: hsl(0, 0%, 0%);
   background-color: brown;
 }
 .btn-table-water {
-  color: hsl(0, 0%, 0%);
   background-color: aqua;
 }
 
-.div-search table {
-  width: 100%;
-  height: 50vh;
-  margin: 5vh 0vh 5vh 0vh;
-  grid-column: 2;
-}
 .div-search {
   display: grid;
-  grid-template-columns: 10% 1fr 10%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vh;
+  width: 80%;
 }
+
 .grid-types {
   grid-gap: 0.5vh;
   display: grid;
@@ -110,11 +98,16 @@ electric, fight, flying, plant, ice, poison, rock, water */
   margin: 5vh;
 }
 
-table tbody tr td button font.font-detail{
-  color: black;
+.container-types-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-button[class^="btn-table-"] {
-  height: 100%;
-    width: 100%;
-    cursor: pointer;
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  
 }

@@ -9,10 +9,13 @@
 
 body{
   background-color: var(--color-black-fondo);
-  margin: 0;
   font-family: 'Caveat', cursive;
   font-family: 'Permanent Marker', cursive;
   font-family: 'Sedgwick Ave Display', cursive;
+}
+
+body.dark.light {
+  background-color: antiquewhite;
 }
 
 code {
@@ -25,3 +28,13 @@ code {
   padding: 0;
   box-sizing: border-box;
  }
+
+ h1{
+  font-size: x-large;
+ }
+
+ ul,li{
+  list-style: none;
+ }
+
+ 
