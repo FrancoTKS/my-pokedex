@@ -104,9 +104,9 @@ i.img-navbar-items-sign {
   margin-left: 5px;
 }
 
-@media screen and (max-width: 767px) {
-  .div-navbar {
-    justify-content: normal;
+@media screen and (min-width: 451px) and (max-width: 767px) {
+  .div-header {
+    padding: 0;
   }
 
   .div-buttons button {
@@ -132,5 +132,62 @@ i.img-navbar-items-sign {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 450px) {
+  .div-navbar {
+    display: block;
+  }
+  .div-header {
+    padding: 2px;
+  }
+
+  .ul-navbar li {
+    margin-right: 5px;
+  }
+
+  img[class^="img-navbar-items-"] {
+    margin-left: 0;
+    display: none;
+  }
+
+  .div-buttons button {
+    margin-right: 2px;
+  }
+  .btn-mood {
+    margin-left: 2px;
+    padding: 2px 4px;
+  }
+
+  .btn-mood::before {
+    top: -8px;
+    left: -5px;
+    border-left: 5px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 13px solid var(--color-crystal-btn);
+  }
+  .btn-mood::after {
+    bottom: -9px;
+    right: -6px;
+    border-left: 4px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 13px solid var(--color-yellow-btn);
+  }
+
+  .search,
+  .mood {
+    width: 1.1rem;
+  }
+
+  i.img-navbar-items-login,
+  i.img-navbar-items-sign {
+    margin-left: 0;
+    display: none;
+  }
+
+  span.btn-font.sign {
+    content: Sign;
+  }
+
+  .links.ct {
+    content: Contact;
+  }
 }

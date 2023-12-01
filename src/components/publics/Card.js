@@ -3,6 +3,7 @@ import pokeService from "../services/poke.service";
 import Evolutions from "./Evolutions";
 import left from "../images/icons/Icons-Ocultos/arrow-left-double-fill.png";
 import right from "../images/icons/Icons-Ocultos/arrow-right-double-fill.png";
+import float from "../images/pikachu_float.png";
 import "../styles/Card.css";
 
 export default function Card() {
@@ -67,6 +68,9 @@ export default function Card() {
         <button onClick={Next} className="circle-button">
           <img src={right} className="img-btn" />
         </button>
+      </div>
+      <div className="div-float">
+        <img src={float} className="img-float"/>
       </div>
     </div>
   );

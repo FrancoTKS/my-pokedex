@@ -120,7 +120,7 @@ img[class^="img-footer-items-"] {
   margin-top: 1vh;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 451px) and (max-width: 767px) {
   .footer-content {
     height: 25vh;
   }
@@ -159,10 +159,64 @@ img[class^="img-footer-items-"] {
     border-top: 15px solid var(--color-yellow-btn);
   }
 
+  .footer-left h4 {
+    font-size: small;
+  }
 
-
-
+  .footer-left {
+    align-items: flex-start;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 450px) {
+  .footer-content {
+    height: 20vh;
+  }
+
+  .footer-image {
+    height: 5vh;
+  }
+
+  .logo-nintendo {
+    margin-left: 0;
+  }
+
+  img[class^="img-footer-items-"] {
+    margin-left: 2px;
+    width: 4vw;
+  }
+
+  .box-row {
+    margin: 2px 5px;
+  }
+
+  .btn-mood-footer {
+    padding: 1vh 1vw;
+    font-size: x-small;
+  }
+
+  .btn-mood-footer::before {
+    top: -6px;
+    left: -5px;
+    border-left: 3px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 12px solid var(--color-crystal-btn);
+    transform: skewX(15deg);
+  }
+
+  .btn-mood-footer::after {
+    bottom: -8px;
+    right: -6px;
+    border-left: 3px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 13px solid var(--color-yellow-btn);
+  }
+
+  .footer-left h4 {
+    font-size: small;
+  }
+
+  .footer-left {
+    align-items: flex-start;
+  }
 }

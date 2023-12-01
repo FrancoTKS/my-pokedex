@@ -25,7 +25,6 @@ body.light .contact {
     background-color: transparent;
     color: gray;
   }
-
 }
 
 body.dark.light .contact {
@@ -89,15 +88,18 @@ body.dark.light .contact {
   background-color: transparent;
 }
 
-.valid{
+.valid {
   color: forestgreen;
   font-size: smaller;
 }
 
-@media screen and (max-width: 767px) {
-
+@media screen and (min-width: 451px) and (max-width: 767px) {
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  
+@media screen and (max-width: 450px) {
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
 }

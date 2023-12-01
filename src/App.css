@@ -173,7 +173,7 @@ button[class^="btn-submit-"] {
   font-size: smaller;
 }
 
-form input,
+input,
 select {
   width: 100%;
   padding: 0.4em;
@@ -192,8 +192,7 @@ select {
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
-  
+@media screen and (min-width: 451px) and (max-width: 767px) {
   .romboid-button {
     font-size: small;
   }
@@ -215,8 +214,73 @@ select {
     border-top: 15px solid var(--color-crystal-btn);
   }
 
+  .dex-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.3vh;
+  }
 
+  .div-btn-cards {
+    height: 9vh;
+  }
+
+  .rombo-button {
+    top: 2vh;
+    width: 5.5vh;
+    height: 5.5vh;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 450px) {
+  .romboid-button {
+    font-size: x-small;
+  }
+
+  .romboid-button::before {
+    top: -6px;
+    left: -5px;
+    border-left: 3px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 12px solid var(--color-pink-btn);
+    transform: skewX(15deg);
+  }
+
+  .romboid-button::after {
+    bottom: -8px;
+    right: -6px;
+    border-left: 3px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 13px solid var(--color-crystal-btn);
+  }
+
+  .div-img {
+    height: 12vh;
+  }
+
+  .dex-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.3vh;
+  }
+
+  .div-btn-cards {
+    height: 8vh;
+  }
+
+  .rombo-button {
+    top: 2vh;
+    width: 5vh;
+    height: 5vh;
+  }
+
+  .contain-img-contact,
+  .opening,
+  .img-register,
+  .contain-img-login {
+    height: 50vh !important;
+  }
+
+  .title-contact,
+  .title-login,
+  .title-register {
+    margin-top: 5px !important;
+  }
 }

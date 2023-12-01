@@ -44,11 +44,7 @@ body.dark.light .text-content {
     flex-direction: column;
   }
   .opening {
-    height: 50vh;
+    height: 45vh;
   }
 
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  
 }

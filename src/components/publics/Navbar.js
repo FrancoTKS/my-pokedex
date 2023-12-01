@@ -38,7 +38,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="links">
+                <Link to="/contact" className="links ct">
                   Contact Us
                   <img
                     src={logMail}
@@ -96,17 +96,17 @@ export default function Navbar() {
                   login
                   <i
                     className="fa-solid fa-users-viewfinder img-navbar-items-login"
-                  ></i>
+                  />
                 </span>
               </Link>
             </button>
             <button type="button" className="romboid-button">
               <Link to="/register" className="links">
-                <span className="btn-font">
+                <span className="btn-font sign">
                   Sign-up
                   <i
                     className="fa-regular fa-address-card img-navbar-items-sign"
-                  ></i>
+                  />
                 </span>
               </Link>
             </button>

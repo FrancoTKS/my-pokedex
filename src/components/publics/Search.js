@@ -39,7 +39,7 @@ export default function Search() {
         onChange={handleInputChange}
       />
       <Link to={`/details/${searchValue}`} className="btn-link">
-        <button className="btn-search-by-id"> Buscar</button>
+        <button className="btn-submit-search"> Buscar</button>
       </Link>
 
       <div className="types-pokemon">

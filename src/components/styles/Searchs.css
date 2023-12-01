@@ -38,7 +38,7 @@ button[class^="btn-table-"] {
 }
 .btn-table-dark {
   background-color: black;
-  color: azure!important;
+  color: azure !important;
 }
 .btn-table-electric {
   background-color: yellow;
@@ -103,11 +103,67 @@ button[class^="btn-table-"] {
   justify-content: center;
   align-items: center;
 }
-
-@media screen and (max-width: 767px) {
-
+#numID {
+  margin-top: 5px;
+  width: 75%;
+}
+@media screen and (min-width: 451px) and (max-width: 767px) {
+  #numID {
+    margin-top: 5px;
+    width: 60%;
+  }
+  .types-pokemon {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  button.btn-submit-search {
+    width: 20%;
+    margin-left: 10px;
+  }
+  .container-types-search {
+    margin-bottom: 1vh;
+  }
+  .div-img-search {
+    width: 65%;
+    height: 65%;
+    margin: 3vh;
+  }
+  .grid-types {
+    grid-gap: 0.3vh;
+    grid-template-columns: repeat(4, 1fr);
+}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  
+@media screen and (max-width: 450px) {
+  .grid-types {
+    grid-gap: 0.3vh;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .types-pokemon {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #numID {
+    margin-top: 5px;
+    width: 50%;
+  }
+
+  button.btn-submit-search {
+    width: 20%;
+    margin-left: 10px;
+  }
+
+  .div-img-search {
+    width: 45%;
+    margin: 1vh;
+  }
+  .div-search {
+    width: 75%;
+  }
+
+  .container-types-search {
+    margin-bottom: 1vh;
+  }
 }
